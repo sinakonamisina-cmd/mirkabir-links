@@ -1,0 +1,356 @@
+/*=====================================================
+Google Font
+=====================================================*/
+
+@import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;600;700;800;900&display=swap');
+
+
+/*=====================================================
+Reset
+=====================================================*/
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    direction:rtl;
+    font-family:"Vazirmatn", sans-serif;
+    background:#fff8f0;
+    color:#222;
+    min-height:100vh;
+    position:relative;
+    overflow-x:hidden;
+}
+
+a{
+    color:inherit;
+    text-decoration:none;
+}
+
+
+/*=====================================================
+Background Shapes
+=====================================================*/
+
+.background-shape{
+    position:fixed;
+    border-radius:50%;
+    filter:blur(60px);
+    opacity:.35;
+    z-index:0;
+}
+
+.shape-one{
+    width:320px;
+    height:320px;
+    background:#f57c00;
+    top:-100px;
+    right:-100px;
+}
+
+.shape-two{
+    width:280px;
+    height:280px;
+    background:#ffb347;
+    bottom:-80px;
+    left:-80px;
+}
+
+
+/*=====================================================
+Page Layout
+=====================================================*/
+
+.page{
+    position:relative;
+    z-index:1;
+    max-width:480px;
+    margin:0 auto;
+    padding:50px 20px 30px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+
+/*=====================================================
+Profile
+=====================================================*/
+
+.profile{
+    text-align:center;
+    margin-bottom:35px;
+}
+
+.profile-image{
+    margin:0 auto 20px;
+}
+
+.profile-placeholder{
+    width:100px;
+    height:100px;
+    border-radius:50%;
+    background:linear-gradient(135deg, #ff9d00, #f57c00);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin:0 auto;
+    box-shadow:0 10px 25px rgba(245,124,0,.3);
+}
+
+.profile-placeholder i{
+    font-size:40px;
+    color:#fff;
+}
+
+.profile h1{
+    font-size:24px;
+    font-weight:800;
+    margin-bottom:8px;
+}
+
+.profile p{
+    color:#f57c00;
+    font-weight:700;
+    font-size:15px;
+    margin-bottom:14px;
+}
+
+.profile-description{
+    display:block;
+    color:#666;
+    font-size:14px;
+    line-height:1.9;
+    max-width:340px;
+    margin:0 auto;
+}
+
+
+/*=====================================================
+Links
+=====================================================*/
+
+.links{
+    width:100%;
+    display:flex;
+    flex-direction:column;
+    gap:14px;
+    margin-bottom:25px;
+}
+
+.link-card{
+    display:flex;
+    align-items:center;
+    gap:16px;
+    background:#fff;
+    border-radius:18px;
+    padding:16px 20px;
+    box-shadow:0 8px 20px rgba(0,0,0,.06);
+    transition:.3s;
+    border:2px solid transparent;
+}
+
+.link-card:hover{
+    transform:translateY(-4px);
+    box-shadow:0 14px 30px rgba(0,0,0,.1);
+}
+
+.link-icon{
+    width:48px;
+    height:48px;
+    border-radius:14px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-shrink:0;
+    font-size:22px;
+    color:#fff;
+}
+
+.link-card.telegram .link-icon{
+    background:linear-gradient(135deg, #37aee2, #1e96c8);
+}
+
+.link-card.rubika .link-icon{
+    background:linear-gradient(135deg, #f5a623, #f57c00);
+}
+
+.link-card.location .link-icon{
+    background:linear-gradient(135deg, #16a34a, #15803d);
+}
+
+.link-text{
+    flex:1;
+    display:flex;
+    flex-direction:column;
+    gap:3px;
+    text-align:right;
+}
+
+.link-text strong{
+    font-size:16px;
+    font-weight:700;
+}
+
+.link-text span{
+    font-size:13px;
+    color:#888;
+}
+
+.link-arrow{
+    font-size:14px;
+    color:#ccc;
+    transition:.3s;
+}
+
+.link-card:hover .link-arrow{
+    color:#f57c00;
+    transform:translateX(-4px);
+}
+
+
+/*=====================================================
+Store Link
+=====================================================*/
+
+.store-link{
+    width:100%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:10px;
+    background:linear-gradient(135deg, #ff9d00, #f57c00);
+    color:#fff;
+    padding:16px 20px;
+    border-radius:18px;
+    font-weight:800;
+    font-size:16px;
+    box-shadow:0 10px 25px rgba(245,124,0,.3);
+    transition:.3s;
+    margin-bottom:30px;
+}
+
+.store-link:hover{
+    transform:translateY(-4px);
+    box-shadow:0 16px 32px rgba(245,124,0,.4);
+}
+
+.store-link i{
+    font-size:20px;
+}
+
+
+/*=====================================================
+Social Icons
+=====================================================*/
+
+.social-icons{
+    display:flex;
+    gap:14px;
+    margin-bottom:35px;
+}
+
+.social-icons a{
+    width:46px;
+    height:46px;
+    border-radius:50%;
+    background:#fff;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:19px;
+    color:#f57c00;
+    box-shadow:0 6px 16px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.social-icons a:hover{
+    background:#f57c00;
+    color:#fff;
+    transform:translateY(-4px);
+}
+
+
+/*=====================================================
+Footer
+=====================================================*/
+
+footer{
+    text-align:center;
+    color:#999;
+}
+
+footer p{
+    font-size:13px;
+    font-weight:600;
+    margin-bottom:4px;
+}
+
+footer span{
+    font-size:12px;
+}
+
+
+/*=====================================================
+Animation
+=====================================================*/
+
+.profile,
+.link-card,
+.store-link,
+.social-icons,
+footer{
+    animation:fadeUp .6s ease both;
+}
+
+.link-card:nth-child(1){ animation-delay:.05s; }
+.link-card:nth-child(2){ animation-delay:.12s; }
+.link-card:nth-child(3){ animation-delay:.19s; }
+.store-link{ animation-delay:.26s; }
+.social-icons{ animation-delay:.32s; }
+footer{ animation-delay:.38s; }
+
+@keyframes fadeUp{
+    from{
+        opacity:0;
+        transform:translateY(20px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+
+/*=====================================================
+Responsive
+=====================================================*/
+
+@media (max-width:480px){
+
+    .page{
+        padding:35px 16px 25px;
+    }
+
+    .profile h1{
+        font-size:21px;
+    }
+
+    .link-card{
+        padding:14px 16px;
+    }
+
+    .link-icon{
+        width:42px;
+        height:42px;
+        font-size:19px;
+    }
+
+}
